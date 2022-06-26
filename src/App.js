@@ -4,6 +4,7 @@ import About from "./pages/About";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import { CartProvider } from "./context/CartContext";
+import Footer from "./pages/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/about" element={<About />} />
         </Routes>
       </Container>
+      <Footer />
     </CartProvider>
   );
 }
